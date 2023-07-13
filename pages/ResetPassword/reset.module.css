@@ -1,0 +1,96 @@
+.form {
+    position: relative;
+    background-color: var(--black);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formWrapper {
+    position: relative;
+    width: 400px;
+    margin: 5rem 0;
+
+    flex-direction: column;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: var(--white);
+}
+
+.formWrapper img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+
+}
+
+.formWrapper input {
+    width: 360px;
+    height: 45px;
+    box-shadow: none !important;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.formWrapper input:focus {
+    border: 1px solid var(--pink);
+}
+
+.formWrapper label {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0px 0;
+    color: #979899;
+}
+
+.google {
+    width: 360px;
+    font-weight: bold;
+    color: #000;
+    margin: 0px 0;
+    outline: none;
+}
+
+.forget {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+    padding: 15px 0;
+}
+
+.forgetCheck {
+    color: var(--black) !important;
+}
+
+.forget b {
+    color: var(--pink);
+}
+
+.border {
+    border: 1px solid #979899;
+    margin-bottom: 20px;
+    width: 360px;
+}
+
+@media(max-width:768px) {
+    .formWrapper {
+        width: 90%;
+    }
+    .google,
+    .forget,
+    .border,
+    .formWrapper input {
+        width: 300px;
+    }
+    .loginBtn {
+        width: 300px !important;
+    }
+
+}

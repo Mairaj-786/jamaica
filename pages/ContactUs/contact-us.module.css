@@ -1,0 +1,53 @@
+.bg {
+    background-image: url('/backgrounds/Contact.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.main {
+    position: relative;
+    padding: 160px 0 40px 0;
+
+}
+
+.mainWrapper {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.mainWrapper img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.mainWrapperText h1 {
+    font-weight: 700;
+    font-size: 5vw;
+    color: #000000;
+}
+
+.mainWrapperText p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #606060;
+}
+
+.mainWrapperBottomText {
+    margin: 2em 0;
+}
+.mainWrapperBottomText input{
+    margin: .5em 0;
+}
+.mainWrapperBottomText textarea{
+    resize: none;
+    height: 150px;
+}
+
+@media(max-width:991px) {
+    .mainWrapperText h1 {
+        font-size: 8vw;
+    }
+}

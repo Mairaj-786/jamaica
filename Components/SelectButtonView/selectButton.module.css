@@ -1,0 +1,28 @@
+.activeViewBtn {
+    background-color: #13B8A0 !important;
+    color: var(--black) !important;
+    
+}
+
+.TrendingButtonView button {
+    background-color: #fff;
+    border: 1px solid #13B8A0;
+    color: #13B8A0;
+    cursor: pointer;
+    /* border-radius: 10px; */
+    outline: none;
+    padding: 8px 8px;
+}
+
+
+@media(max-width: 991px) {
+    .TrendingButtonView button {
+        background-color: #fff;
+        border: 1px solid #13B8A0;
+        color: #13B8A0;
+        /* border-radius: 10px; */
+        font-size: 16px;
+        outline: none;
+        padding: 4px 7px;
+    }
+}

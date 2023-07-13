@@ -1,0 +1,4 @@
+/* eslint-disable */
+{
+  "extends": "next/core-web-vitals"
+}

@@ -1,0 +1,296 @@
+.entertainment {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-image: url('/backgrounds/TopEvents.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg {
+    background-image: url('/backgrounds/EntertainmentGridView.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+
+.entertainmentWrapper {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.heroText {
+    position: relative;
+    width: 400px;
+    opacity: .9;
+    height: 100%;
+    margin-top: 8rem;
+    object-fit: contain;
+    color: var(--white);
+}
+
+.filter {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.border {
+    position: relative;
+    border-bottom: 1px solid #15303F;
+    margin: .6em 0;
+}
+
+.layout {
+    position: relative;
+    width: 90%;
+    min-height: 100vh;
+    background-color: var(--white);
+    margin: 2.4rem auto;
+}
+
+.content {
+    min-height: 100vh;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contentData {
+    border-left: 1px solid #CECCCD;
+}
+
+.layoutHeader {
+    background-color: var(--white) !important;
+}
+
+.sidebar {
+    background-color: var(--white) !important;
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+}
+
+.filterHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    justify-content: space-between;
+}
+
+.filterHeaderRightContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterHeaderRightContainer li {
+    list-style: none;
+    margin: 0 1em;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.menuHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuHeader img {
+    width: 17px;
+    cursor: pointer;
+    height: 17px;
+    object-fit: contain;
+}
+
+.filterHeaderLeftContainerCalendarView {
+    margin: 0 1em;
+    border: 1px solid var(--cyanLight);
+    padding: 8px 10px;
+    color: var(--cyanLight);
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.filterHeaderLeftContainerCalendarViewActive {
+    margin: 0 1em;
+    border: 1px solid var(--cyanLight);
+    background: var(--cyanLight) !important;
+    padding: 8px 10px;
+    color: var(--black);
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.menuHeader h5 {
+    font-weight: 400;
+    font-size: 21.5068px;
+    line-height: 29px;
+    color: #052232;
+}
+
+.rotateIcon {
+    transition: 0.3s linear all;
+    transform: rotate(180deg);
+}
+
+.openArrow {
+    transition: 0.3s linear all;
+}
+
+.menuItems {
+    position: relative;
+    display: flex;
+    padding: 10px !important;
+    margin: 0 !important;
+    flex-direction: column;
+}
+
+.rangePrice {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rangePrice b {
+    font-weight: 400;
+    font-size: 10.7185px;
+    line-height: 14px;
+    color: #111111;
+}
+
+.customSelect {
+    border: 2px solid #DF9411 !important;
+    width: 180px !important;
+    height: 40px !important;
+    cursor: pointer;
+    border-radius: 10px !important;
+    padding: 3px;
+}
+.customSelect::after{
+    border: 2px solid #DF9411;
+}
+
+.allLocation {
+    border: 2px solid #DF9411;
+    border-radius: 10px;
+    width: 170px;
+}
+
+.location {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #15303F;
+}
+
+.location img {
+    transform: rotate(90deg);
+    width: 4px;
+    height: 4px;
+    object-fit: contain;
+}
+
+.filterHeaderLeftContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterHeaderLeftContainerLocation {
+    margin-right: 1em;
+}
+
+/* .customRange>div>div:first-child {
+    height: 3px;
+}
+
+.customRange>div>div:nth-child(2) {
+    background-color: #612d13;
+    height: 4px;
+}
+
+.customRange>div>div:last-child::after {
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    width: 20px;
+    background-color: #000;
+    object-fit: contain;
+    height: 20px;
+    top: -5px;
+    box-shadow: none !important;
+} */
+
+
+@media(max-width: 991px) {
+    .filterHeaderRightContainer li {
+        list-style: none;
+        margin: 1em 1em;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 24px;
+        text-transform: capitalize;
+    }
+
+    .allLocation {
+        width: 120px;
+        /* height: 40px; */
+        margin-top: -.3em;
+        margin-left: 14px;
+    }
+
+    .filterHeaderLeftContainerCalendarViewActive,
+    .filterHeaderLeftContainerCalendarView {
+        margin: 1em 0;
+        padding: 4px 10px;
+    }
+
+    .filterHeaderLeftContainer {
+        flex-direction: column;
+    }
+
+
+    .filterHeader {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 4rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .customSelect {
+        width: 150px !important;
+    }
+
+    .heroText {
+        width: 100%;
+        margin-top: 27rem;
+        padding: 10px;
+        background: linear-gradient(rgba(7, 2, 2, 1), rgba(0, 0, 0, 1));
+    }
+
+    .bg {
+        background-size: cover;
+        object-fit: contain;
+    }
+
+    .entertainment {
+        background-image: url('/backgrounds/TopEventsmobile.png');
+        background-position: center;
+    }
+}

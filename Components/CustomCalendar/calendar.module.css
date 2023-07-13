@@ -1,0 +1,219 @@
+.UpcomingEvents ul {
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+    background: radial-gradient(276.83% 2926.01% at -109.03% 57.29%, #C74349 17.44%, #C94B43 35.47%, #C13255 37.27%, #C43B4E 38.87%, #BF295B 40.46%, #B8136A 44.93%, #BB1E62 49.71%, #B91867 55.68%, #B8136A 59.8%, #BD255D 64.35%, #BE285B 66.84%, #C33652 69.07%, #D26A2E 79.09%, #DF9411 96.05%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    margin: 10px 0;
+    height: 35px;
+    /* justify-content: space-between; */
+}
+
+.days {
+    display: flex;
+    width: 100%;
+    background: radial-gradient(276.83% 2926.01% at -109.03% 57.29%, #C74349 17.44%, #C94B43 35.47%, #C13255 37.27%, #C43B4E 38.87%, #BF295B 40.46%, #B8136A 44.93%, #BB1E62 49.71%, #B91867 55.68%, #B8136A 59.8%, #BD255D 64.35%, #BE285B 66.84%, #C33652 69.07%, #D26A2E 79.09%, #DF9411 96.05%);
+    margin: 10px 0;
+    height: 35px;
+
+}
+
+.days li {
+    width: 100%;
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--white);
+    align-items: flex-end;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.UpcomingEvents ul li {
+    width: 100%;
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--white);
+    align-items: flex-end;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.UpcomingEventsCard {
+    padding: 10px 10px;
+    border: 1px solid black;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+    height: 150px;
+}
+
+
+
+.UpcomingEventsWrapperCard {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+
+.UpcomingEventsCard {
+    padding: 10px 10px;
+    border: 1px solid black;
+    width: 100%;
+    background-color: #fff;
+    height: 150px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.UpcomingEventsCard::-webkit-scrollbar {
+    display: none;
+}
+
+.UpcomingEventsCard p {
+    color: var(--black);
+    line-height: 5px;
+}
+
+.UpcomingEventsCard strong {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    color: #13B8A0;
+
+}
+
+.control {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10x 0;
+}
+
+.control span {
+    margin: 0 .4em;
+    font-weight: 500;
+    font-size: 16px;
+    /* black */
+}
+
+.control b {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.calendarSingleData {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.calendarSingleDataWrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.calendarSingleDataLeftContainer {
+    margin-right: 1em;
+
+}
+
+.calendarSingleDataLeftContainer img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.calendarSingleDataRightContainer {
+    position: relative;
+    /* height: 200px; */
+    padding: 0 10px;
+    width: 100%;
+}
+
+.centerDate {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.calendarSingleDataRightContainerTitle {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1em 0;
+}
+
+
+.calendarSingleDataRightContainerViewDetail {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+
+.calendarSingleDataRightContainerViewDetail b {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+    .UpcomingEventsCard p {
+        color: var(--black);
+        font-size: 7px;
+        line-height: 10px;
+    }
+
+    .control b {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .control span {
+        font-size: 14px;
+    }
+
+    .UpcomingEventsCard {
+        height: 90px;
+    }
+
+    .UpcomingEventsCard strong {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: -10px;
+        color: #13B8A0;
+
+    }
+
+    .calendarSingleDataLeftContainer img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .calendarSingleDataRightContainerViewDetail b {
+        font-size: 20px;
+    }
+
+    .calendarDates {
+        display: none;
+    }
+
+    .calendarSingleDataLeftContainer img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}

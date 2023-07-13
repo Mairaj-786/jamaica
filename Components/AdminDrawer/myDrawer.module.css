@@ -1,0 +1,76 @@
+.sidebar {
+    position: relative;
+    width: 100%;
+    background-position: bottom;
+    object-fit: cover;
+    background-color: var(--white);
+    height: 100vh;
+}
+
+.sidebarWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url('/backgrounds/dashboard-sidebar.png');
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.sidebarLogo {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebarLogo img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.sidebarLinks {
+    position: relative;
+}
+
+.sidebarLinks a {
+    text-decoration-line: none;
+}
+
+.sidebarLinks a:hover .sidebarLinks li a {
+    color: var(--white) !important;
+}
+
+.sidebarLinks li {
+    cursor: pointer;
+    list-style: none;
+    margin: 10px 0;
+    padding: 10px 20px;
+    transition: 0.3s linear all;
+}
+
+.sidebarLinks li:hover {
+    background-color: var(--pink);
+}
+
+.sidebarLinks li a:hover {
+    color: var(--white);
+}
+
+.active {
+    background-color: var(--pink);
+    /* background-color: red !important; */
+}
+
+.active a {
+    color: var(--white) !important;
+}
+
+.sidebarLinks li a {
+    color: var(--black);
+    font-style: normal;
+    text-decoration-line: none;
+    font-weight: 400;
+    font-size: 16px;
+}

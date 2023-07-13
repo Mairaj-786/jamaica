@@ -1,0 +1,38 @@
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header svg{
+    cursor: pointer;
+}
+.header img{
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+.links{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.links li{
+    list-style: none;
+    margin: 6px 0px;
+    padding: 5px 10px;
+    /* background-color: var(--pink); */
+}
+
+.links a{
+    color: var(--black);
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration-line: none;
+
+}
+
+.buttons{
+    margin: 20px 0;
+}

@@ -1,0 +1,234 @@
+.dashboard {
+    position: relative;
+    height: 100vh;
+    /* overflow: hidden; */
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    position: relative;
+    width: 280px;
+    background-position: bottom;
+    object-fit: cover;
+    background-color: var(--white);
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebarWrapper {
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    background-image: url('/backgrounds/dashboard-sidebar.png');
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.sidebarLogo {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebarLogo img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.sidebarLinks {
+    position: relative;
+    margin-top: -2.5em;
+}
+
+.sidebarLinks a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration-line: none;
+}
+
+.sidebarLinks a:hover .sidebarLinks li a {
+    color: var(--white) !important;
+}
+
+.sidebarLinks li {
+    cursor: pointer;
+    list-style: none;
+    margin: 10px 0;
+    padding: 10px 20px;
+    transition: 0.3s linear all;
+}
+
+.sidebarLinks li:hover {
+    background-color: #B8136A;
+}
+
+.sidebarLinks li:hover a {
+    color: var(--white);
+}
+
+.sidebarLinks li a:hover {
+    color: var(--white);
+}
+
+.active {
+    background-color: #B8136A;
+    /* background-color: red !important; */
+}
+
+.active a {
+    color: var(--white) !important;
+}
+
+.sidebarLinks li a {
+    color: var(--black);
+    font-style: normal;
+    text-decoration-line: none;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.header {
+    background-color: #B8136A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    height: 80px;
+    margin-bottom: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.headerLeft {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.search {
+    width: 100%;
+    height: 41px;
+    padding: 0 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.headerLefticon {
+    position: absolute;
+    background-color: #13B8A0;
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    right: 0;
+    height: 100%;
+    object-fit: contain;
+}
+
+.headerLeft img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.headerRight {
+    position: relative;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerRight img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.main {
+    width: calc(100% - 280px);
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.mainContent {}
+
+.ham {
+    display: none;
+    font-size: 40px;
+    margin-left: .4em;
+}
+
+.mobileNav {
+    display: none;
+}
+
+@media(max-width: 991px) {
+    .ham {
+        display: block;
+    }
+
+    .mobileNav {
+        display: block;
+    }
+
+    .searchMobile {
+        width: 100%;
+        height: 31px;
+        margin-left: auto !important;
+        padding: 0 10px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        overflow-x: hidden;
+        height: 100vh;
+    }
+
+    .headerRight {
+        display: none;
+    }
+
+    .headerLeft {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .headerLefticon {
+        margin-left: auto;
+        height: 32px;
+    }
+
+    .headerLeftLogo {
+        width: 90px !important;
+        object-fit: contain;
+        height: 100% !important;
+    }
+
+    .search {
+
+        display: none;
+    }
+
+}

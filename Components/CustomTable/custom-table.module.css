@@ -1,0 +1,89 @@
+.CustomTable table thead {
+    background-color: var(--cyanLight);
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #4F4F4F;
+}
+
+.CustomTable table thead tr th {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.CustomTable {
+    background-color: #F0F0F0;
+}
+
+.CustomTable tbody tr td {
+    border: none !important;
+    font-weight: 400;
+    font-size: 14px;
+    color: #15303F;
+}
+
+.paginationbutton {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100px;
+}
+
+.paginationBttns {
+    width: 100%;
+    list-style: none;
+    /* padding: 10px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginationBttns a {
+    padding: 4px 5px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--cyanLight);
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+.paginationBttns a:hover {
+    color: white !important;
+    background-color: var(--cyanLight);
+}
+
+.paginationDisabled a:hover {
+    background-color: var(--white);
+    color: var(--secondary);
+}
+
+.paginationDisabled a {
+    color: black;
+    opacity: .7;
+    cursor: not-allowed;
+    background-color: white;
+}
+
+.paginationActive a {
+    color: white !important;
+    background-color: var(--cyanLight);
+    font-weight: bold;
+}
+
+@media(max-width: 991px) {
+    .CustomTable {
+        background-color: #F0F0F0;
+        overflow-x: scroll;
+        margin: auto;
+        width: 90% !important;
+    }
+
+    .CustomTable tbody tr td {
+        font-size: 12px;
+    }
+
+    .CustomTable table thead tr th {
+        font-size: 14px;
+        text-align: center;
+    }
+}
